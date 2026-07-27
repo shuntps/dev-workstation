@@ -1,0 +1,18 @@
+version: "3"
+
+tasks:
+  bootstrap:
+    cmds:
+      - ./bootstrap.sh
+
+  lint:
+    cmds:
+      - find . -type f -name "*.sh" -print0 | xargs -0 shellcheck
+
+  format:
+    cmds:
+      - shfmt -w .
+
+  test:
+    cmds:
+      - echo "No tests yet."

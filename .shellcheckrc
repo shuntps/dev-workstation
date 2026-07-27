@@ -1,0 +1,10 @@
+severity=style
+
+# SC1090/SC1091: files are sourced dynamically via ${DW_ROOT_DIR}, a variable
+# assigned by lib/common.sh before any installer/lib file is sourced.
+disable=SC1090
+disable=SC1091
+
+# SC2016: dw::shell::configure_rc intentionally receives single-quoted eval
+# strings so they land unexpanded in .bashrc and only expand once sourced.
+disable=SC2016

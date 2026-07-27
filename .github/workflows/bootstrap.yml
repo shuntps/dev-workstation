@@ -1,0 +1,20 @@
+name: Bootstrap
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  run-twice:
+    runs-on: ubuntu-latest
+    env:
+      NEEDRESTART_MODE: a
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Run bootstrap.sh (fresh)
+        run: ./bootstrap.sh
+
+      - name: Run bootstrap.sh again (idempotency)
+        run: ./bootstrap.sh

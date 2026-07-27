@@ -1,0 +1,29 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Verify WORKSTATION_VERSION matches tag
+        run: |
+          tag_version="${GITHUB_REF_NAME#v}"
+          config_version="$(grep -oP '(?<=WORKSTATION_VERSION=")[^"]+' config/workstation.conf)"
+          if [ "$tag_version" != "$config_version" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME does not match WORKSTATION_VERSION ($config_version) in config/workstation.conf"
+            exit 1
+          fi
+
+      - name: Create GitHub release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" --generate-notes

@@ -1,0 +1,36 @@
+CLAUDE.*
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# Shell
+.history
+
+# Temporary
+tmp/
+temp/
+
+# Test output
+coverage/
+
+# Archives
+*.zip
+*.tar.gz
