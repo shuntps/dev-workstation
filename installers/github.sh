@@ -15,6 +15,15 @@ dw::installer::github::installed() {
 
 dw::installer::github::install() {
 
+  if [[ ! -t 0 ]]; then
+
+    dw::logger::warning "No interactive terminal detected; skipping 'gh auth login'."
+    dw::logger::warning "Run 'gh auth login' manually to connect."
+
+    return
+
+  fi
+
   dw::logger::info "Not connected to GitHub. Launching interactive login..."
 
   gh auth login --hostname github.com --git-protocol "${GH_GIT_PROTOCOL}" ||
