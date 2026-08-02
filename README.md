@@ -15,7 +15,7 @@ machine, and it only installs or changes what's missing.
 ## What it sets up
 
 - **System** — apt update/upgrade/autoremove/autoclean, base packages (`curl`,
-  `wget`, `jq`, `tree`, `htop`, ...)
+  `wget`, `jq`, `tree`, `htop`, `build-essential`, ...)
 - **Git** — sane global defaults (rebase on pull, prune on fetch, autoSetupRemote,
   rerere, ...) and a global `.gitignore`
 - **SSH** — `openssh-client` and an SSH key generated if none exists
