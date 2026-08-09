@@ -1,5 +1,5 @@
 # Copyright (C) 2026 Shunt
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: MIT
 
 param(
     [Parameter(Mandatory = $true)]

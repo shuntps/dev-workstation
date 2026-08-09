@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Copyright (C) 2026 Shunt
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: MIT
 
 source "${DW_ROOT_DIR}/tasks/system.sh"
 source "${DW_ROOT_DIR}/tasks/packages.sh"
