@@ -40,4 +40,6 @@ dw::task::install() {
 
   dw::installer::run direnv
 
+  dw::installer::run shellcheck
+
 }

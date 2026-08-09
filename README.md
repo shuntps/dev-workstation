@@ -33,6 +33,7 @@ machine, and it only installs or changes what's missing.
 - **Starship** — a prompt showing OS, user@host, directory, git status, language
   versions, command duration, and time
 - **lazygit** and **direnv**
+- **ShellCheck** — installed via apt, used to lint this project's own scripts
 
 ## Requirements
 
