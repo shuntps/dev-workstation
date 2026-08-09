@@ -44,7 +44,7 @@ Conventions to follow throughout:
 - Short, single-responsibility functions.
 - `set -Eeuo pipefail`, quoted variables.
 - Every source file (`.sh` and `.ps1`) carries the copyright/SPDX header
-  (`# Copyright (C) <year> <name>` / `# SPDX-License-Identifier: GPL-3.0-or-later`)
+  (`# Copyright (C) <year> <name>` / `# SPDX-License-Identifier: MIT`)
   right after the shebang.
 - No duplicated logic — if two installers need the same thing (e.g. resolving
   a GitHub release), put it in `lib/`.

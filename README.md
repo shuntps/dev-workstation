@@ -4,7 +4,7 @@
 [![Bootstrap](https://github.com/shuntps/dev-workstation/actions/workflows/bootstrap.yml/badge.svg)](https://github.com/shuntps/dev-workstation/actions/workflows/bootstrap.yml)
 [![Release](https://github.com/shuntps/dev-workstation/actions/workflows/release.yml/badge.svg)](https://github.com/shuntps/dev-workstation/actions/workflows/release.yml)
 [![Version](https://img.shields.io/github/v/release/shuntps/dev-workstation)](https://github.com/shuntps/dev-workstation/releases/latest)
-[![License: GPL v3](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Automated and reproducible Ubuntu/WSL development workstation bootstrap.
 
@@ -153,4 +153,5 @@ before opening a PR.
 
 ## License
 
-GPL-3.0 — see [LICENSE](LICENSE).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE)
+file for details.
